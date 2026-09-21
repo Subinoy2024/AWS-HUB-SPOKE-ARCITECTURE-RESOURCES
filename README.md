@@ -1,6 +1,6 @@
 # AWS Hub-and-Spoke Network with Centralised Network Firewall Inspection
 
-Production-grade Terraform codebase for a centralised hub-and-spoke AWS network architecture serving 30 spoke accounts in an AWS Organizations landing zone.
+Production-grade Terraform codebase for a centralised hub-and-spoke AWS network architecture serving 5 spoke accounts in an AWS Organizations landing zone.
 
 ## Architecture Highlights
 
@@ -35,13 +35,13 @@ Production-grade Terraform codebase for a centralised hub-and-spoke AWS network 
 │   ├── firewall-policy/   # Rule groups and two distinct policies (ingress & inspection)
 │   ├── ingress-vpc/       # Ingress VPC, firewall 1, NLB, IGW edge routing
 │   ├── inspection-vpc/    # Inspection VPC, firewall 2, NAT, dual return routing
-│   ├── spoke/             # Spoke module executed across 30 spoke accounts
+│   ├── spoke/             # Spoke module executed across 5 spoke accounts
 │   ├── tags/              # Standard mandatory tagging module
 │   ├── tgw/               # Transit Gateway, 4 route tables, RAM share
 │   └── vpc-endpoints/     # Gateway & interface endpoints with PrincipalOrgID policies
 ├── live/
 │   ├── hub/               # Root module for the hub account
-│   └── spokes/            # Root module and 30 tfvars files (spoke-01.tfvars .. spoke-30.tfvars)
+│   └── spokes/            # Root module and 5 tfvars files (spoke-01.tfvars .. spoke-05.tfvars)
 └── scripts/               # Architecture validation and test scripts
 ```
 
