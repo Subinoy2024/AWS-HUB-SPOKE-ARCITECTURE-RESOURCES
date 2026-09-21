@@ -1,0 +1,39 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Plan files
+*.tfplan
+*.tfplan.*
+tfplan*
+*.plan
+*.binary
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude secrets
+*.secret.tfvars
+.env
+*.env
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# OS and IDE files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/

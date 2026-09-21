@@ -1,0 +1,9 @@
+aws_region                 = "us-east-1"
+environment                = "hub"
+owner                      = "cloud-platform-netops"
+cost_center                = "CC-NET-7001"
+ram_principal_org_arn      = "arn:aws:organizations::123456789012:organization/o-exampleorgid"
+log_destination_bucket_arn = "arn:aws:s3:::org-log-archive-firewall-logs"
+az_names                   = ["us-east-1a", "us-east-1b"]
+inspection_vpc_cidr        = "10.100.0.0/16"
+ingress_vpc_cidr           = "10.101.0.0/16"
